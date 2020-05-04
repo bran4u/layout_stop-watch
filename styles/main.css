@@ -1,0 +1,51 @@
+.watch-box {
+  position: relative;
+  margin: auto;
+  height: 10em;
+  width: 10em;
+  border: 5px solid #f1f;
+  border-radius: 50%; }
+
+.watch {
+  position: absolute;
+  width: 0.3em;
+  height: 50%;
+  bottom: 50%;
+  left: 50%; }
+  .watch::before {
+    content: "";
+    position: absolute;
+    width: 0.3em;
+    height: 100%;
+    background-color: red;
+    -webkit-animation: mechanism 3600s infinite steps(60);
+            animation: mechanism 3600s infinite steps(60);
+    transform-origin: bottom; }
+  .watch::after {
+    content: "";
+    position: absolute;
+    width: 0.3em;
+    top: 50%;
+    height: 50%;
+    background-color: blue;
+    -webkit-animation: mechanism 60s infinite steps(60);
+            animation: mechanism 60s infinite steps(60);
+    transform-origin: bottom; }
+
+@-webkit-keyframes mechanism {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes mechanism {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+/*# sourceMappingURL=main.css.map */
