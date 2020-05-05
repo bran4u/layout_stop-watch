@@ -16,7 +16,7 @@
     content: "";
     position: absolute;
     width: 0.3em;
-    top: 50%;
+    top: 10%;
     height: 90%;
     background-color: blue;
     -webkit-animation: mechanism 60s infinite steps(60);
@@ -26,7 +26,8 @@
     content: "";
     position: absolute;
     width: 0.3em;
-    height: 80%;
+    top: 30%;
+    height: 70%;
     background-color: red;
     -webkit-animation: mechanism 3600s infinite steps(60);
             animation: mechanism 3600s infinite steps(60);
